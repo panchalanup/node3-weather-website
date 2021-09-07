@@ -16,7 +16,14 @@ body{
 
 .portrait{
     border-radius: 3px;
-    width:250px
+    width:250px;
+    box-shadow:0px 0px 7px 1px rgba(88, 88, 88, 0.756);
+    transition:transform 0.2s ease;
+    cursor:pointer;
+}
+
+.portrait:hover{
+    transform: scale(1.05) rotate(-2deg);
 }
 
 footer{

@@ -60,11 +60,11 @@ app.get('/weather',(req,res) => {
         if(error){
             return res.send({ error })
         }
-        forecast(latitude, longitude, (error, {weather_descriptions,temperature,feelslike} = {}) => {
+        forecast(latitude, longitude, (error, {weather_descriptions,temperature,feelslike,wind_speed} = {}) => {
             if(error){
                 return res.send({ error })
             }
-            const forecastData = `${weather_descriptions[0]} .It is currently ${temperature} degree out. It feels like ${feelslike} out`;
+            const forecastData = `${weather_descriptions[0]} .It is currently ${temperature} degree out. It feels like ${feelslike} out. Now wind speed is ${wind_speed}`;
 
             console.log(chalk.green.inverse(location))
             console.log(chalk.green.inverse(forecastData))
