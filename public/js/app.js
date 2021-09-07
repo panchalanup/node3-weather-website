@@ -1,4 +1,4 @@
-
+console.log('This lint print in client side console');
 
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
 //     console.log(response)
