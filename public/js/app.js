@@ -1,5 +1,7 @@
 console.log('This line print in client side console');
 
+console.log('Testing')
+
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
 //     console.log(response)
 //     response.json().then((data) => {
